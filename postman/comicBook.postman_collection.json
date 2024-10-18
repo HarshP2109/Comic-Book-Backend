@@ -1,0 +1,147 @@
+{
+    "info": {
+        "_postman_id": "abc12345-def6-7890-gh12-ijkl34567890",
+        "name": "Comic Book Store API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Comic Book 1",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"Batman\",\"author\": \"Bob Kane\",\"year\": 1939,\"price\": 15.99,\"discount\": 10,\"pages\": 100,\"condition\": \"new\",\"description\": \"First edition comic book\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/comics",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Comic Book 2",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"Superman\",\"author\": \"Bob Kane\",\"year\": 1949,\"price\": 17.99,\"discount\": 20,\"pages\": 104,\"condition\": \"new\",\"description\": \"First edition comic book\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/comics",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Comic Book 3",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"Batman 3\",\"author\": \"Bob Kane\",\"year\": 1940,\"price\": 13.99,\"discount\": 10,\"pages\": 130,\"condition\": \"old\",\"description\": \"Second edition comic book\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/comics",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Comic Books",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/comics",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Comic Book by ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/comics/615f36e0b1949c27c8cf1ef3",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics", "615f36e0b1949c27c8cf1ef3"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Comic Book",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"price\": 20.99,\"discount\": 15}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/comics/615f36e0b1949c27c8cf1ef3",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics", "615f36e0b1949c27c8cf1ef3"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Comic Book",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/api/comics/615f36e0b1949c27c8cf1ef3",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "comics", "615f36e0b1949c27c8cf1ef3"]
+                }
+            },
+            "response": []
+        }
+    ]
+}
